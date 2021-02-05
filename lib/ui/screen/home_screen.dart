@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/ui/widget/common_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -8,76 +9,51 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ButtonTheme(
-              minWidth: 150.0,
-              child: FlatButton(
-                onPressed: () => print('Button 1'),
-                color: Colors.blue,
-                child: Text(
-                  'Button 1',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ),
+            CommonWidget().button(
+              150,
+              Colors.blue,
+              'Button 1',
+              () => print('Button 1'),
             ),
             SizedBox(
               width: double.infinity,
               height: 30.0,
             ),
-            ButtonTheme(
-              minWidth: 150.0,
-              child: FlatButton(
-                onPressed: () => print('Button 2'),
-                color: Colors.red,
-                child: Text(
-                  'Button 2',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ),
+            CommonWidget().button(
+              150,
+              Colors.red,
+              'Button 2',
+              () => print('Button 2'),
             ),
             SizedBox(
               width: double.infinity,
               height: 30.0,
             ),
-            ButtonTheme(
-              minWidth: 150.0,
-              child: FlatButton(
-                onPressed: () => print('Button 3'),
-                color: Colors.yellow,
-                child: Text(
-                  'Button 2',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ),
+            CommonWidget().button(
+              150,
+              Colors.yellow,
+              'Button 3',
+              () => print('Button 3'),
             ),
             SizedBox(
               width: double.infinity,
               height: 30.0,
             ),
-            ButtonTheme(
-              minWidth: 150.0,
-              child: FlatButton(
-                onPressed: () => print('Button 4'),
-                color: Colors.green,
-                child: Text(
-                  'Button 2',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ),
+            CommonWidget().button(
+              150,
+              Colors.green,
+              'Button 4',
+              () => print('Button 4'),
             ),
             SizedBox(
               width: double.infinity,
               height: 30.0,
             ),
-            ButtonTheme(
-              minWidth: 150.0,
-              child: FlatButton(
-                onPressed: () => print('Button 5'),
-                color: Colors.orange,
-                child: Text(
-                  'Button 2',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-              ),
+            CommonWidget().button(
+              150,
+              Colors.orange,
+              'Button 5',
+              () => print('Button 5'),
             ),
             SizedBox(
               width: double.infinity,
