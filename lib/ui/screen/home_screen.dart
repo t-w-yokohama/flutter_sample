@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/ui/screen/card_screen.dart';
+import 'package:flutter_sample/ui/screen/check_box_screen.dart';
+import 'package:flutter_sample/ui/screen/indicator_screen.dart';
+import 'package:flutter_sample/ui/screen/radio_button_screen.dart';
+import 'package:flutter_sample/ui/screen/slider_screen.dart';
+import 'package:flutter_sample/ui/screen/switch_screen.dart';
 import 'package:flutter_sample/ui/widget/common_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,8 +18,13 @@ class HomeScreen extends StatelessWidget {
             CommonWidget().button(
               150,
               Colors.blue,
-              'Button 1',
-              () => print('Button 1'),
+              'カード画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CardScreen(),
+                ),
+              ),
             ),
             SizedBox(
               width: double.infinity,
@@ -22,8 +33,13 @@ class HomeScreen extends StatelessWidget {
             CommonWidget().button(
               150,
               Colors.red,
-              'Button 2',
-              () => print('Button 2'),
+              'チェックボックス画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CheckBoxScreen(),
+                ),
+              ),
             ),
             SizedBox(
               width: double.infinity,
@@ -32,8 +48,13 @@ class HomeScreen extends StatelessWidget {
             CommonWidget().button(
               150,
               Colors.yellow,
-              'Button 3',
-              () => print('Button 3'),
+              'インジケーター画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => IndicatorScreen(),
+                ),
+              ),
             ),
             SizedBox(
               width: double.infinity,
@@ -42,8 +63,13 @@ class HomeScreen extends StatelessWidget {
             CommonWidget().button(
               150,
               Colors.green,
-              'Button 4',
-              () => print('Button 4'),
+              'ラジオボタン画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => RadioButtonScreen(),
+                ),
+              ),
             ),
             SizedBox(
               width: double.infinity,
@@ -52,12 +78,28 @@ class HomeScreen extends StatelessWidget {
             CommonWidget().button(
               150,
               Colors.orange,
-              'Button 5',
-              () => print('Button 5'),
+              'スライダー画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SliderScreen(),
+                ),
+              ),
             ),
             SizedBox(
               width: double.infinity,
               height: 30.0,
+            ),
+            CommonWidget().button(
+              150,
+              Colors.deepPurple,
+              'スイッチ画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SwitchScreen(),
+                ),
+              ),
             ),
           ],
         ),
