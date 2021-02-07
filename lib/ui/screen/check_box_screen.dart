@@ -6,14 +6,24 @@ class CheckBoxScreen extends StatefulWidget {
 }
 
 class _CheckBoxScreenState extends State<CheckBoxScreen> {
+  bool _checkBox = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: Text(
-            'チェックボックス画面(作成中)',
-            style: TextStyle(fontWeight: FontWeight.bold),
+          child: Checkbox(
+            activeColor: Colors.blue,
+            value: _checkBox,
+            onChanged: (bool value) => {
+              setState(
+                () => {
+                  _checkBox = value,
+                  print('_checkBox = $_checkBox'),
+                },
+              ),
+            },
           ),
         ),
       ),
