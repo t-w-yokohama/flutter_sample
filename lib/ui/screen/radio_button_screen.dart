@@ -6,14 +6,41 @@ class RadioButtonScreen extends StatefulWidget {
 }
 
 class _RadioButtonScreenState extends State<RadioButtonScreen> {
+  String _selectRadio = '未選択';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: Text(
-            'ラジオボタン画面(作成中)',
-            style: TextStyle(fontWeight: FontWeight.bold),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Radio(
+                value: 'A',
+                groupValue: _selectRadio,
+                onChanged: (String value) => {
+                  setState(
+                    () => {
+                      _selectRadio = value,
+                      print('_selectRadio = $_selectRadio'),
+                    },
+                  ),
+                },
+              ),
+              Radio(
+                value: 'B',
+                groupValue: _selectRadio,
+                onChanged: (String value) => {
+                  setState(
+                    () => {
+                      _selectRadio = value,
+                      print('_selectRadio = $_selectRadio'),
+                    },
+                  ),
+                },
+              ),
+            ],
           ),
         ),
       ),
