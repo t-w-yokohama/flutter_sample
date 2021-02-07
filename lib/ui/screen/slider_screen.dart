@@ -6,14 +6,25 @@ class SliderScreen extends StatefulWidget {
 }
 
 class _SliderScreenState extends State<SliderScreen> {
+  double _currentSliderValue = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: Text(
-            'スライダー画面(作成中)',
-            style: TextStyle(fontWeight: FontWeight.bold),
+          child: Slider(
+            min: 0,
+            max: 10.0,
+            value: _currentSliderValue,
+            onChanged: (double value) => {
+              setState(
+                () => {
+                  _currentSliderValue = value,
+                  print('slider value = $value'),
+                },
+              ),
+            },
           ),
         ),
       ),
