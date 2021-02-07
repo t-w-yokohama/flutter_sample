@@ -11,9 +11,8 @@ class _IndicatorScreenState extends State<IndicatorScreen> {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: Text(
-            'インジケーター画面(作成中)',
-            style: TextStyle(fontWeight: FontWeight.bold),
+          child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
           ),
         ),
       ),
