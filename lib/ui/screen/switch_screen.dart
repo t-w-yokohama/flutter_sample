@@ -6,14 +6,23 @@ class SwitchScreen extends StatefulWidget {
 }
 
 class _SwitchScreenState extends State<SwitchScreen> {
+  bool _isSwitched = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Center(
-          child: Text(
-            'スイッチ画面(作成中)',
-            style: TextStyle(fontWeight: FontWeight.bold),
+          child: Switch(
+            value: _isSwitched,
+            onChanged: (bool) => {
+              setState(
+                () => {
+                  _isSwitched = bool,
+                  print('*** _isSwitched = $_isSwitched'),
+                },
+              ),
+            },
           ),
         ),
       ),
