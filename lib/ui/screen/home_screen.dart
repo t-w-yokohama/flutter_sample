@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sample/ui/screen/card_screen.dart';
 import 'package:flutter_sample/ui/screen/check_box_screen.dart';
 import 'package:flutter_sample/ui/screen/indicator_screen.dart';
+import 'package:flutter_sample/ui/screen/drop_down_screen.dart';
 import 'package:flutter_sample/ui/screen/radio_button_screen.dart';
 import 'package:flutter_sample/ui/screen/slider_screen.dart';
 import 'package:flutter_sample/ui/screen/switch_screen.dart';
@@ -98,6 +99,21 @@ class HomeScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => SwitchScreen(),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              height: 30.0,
+            ),
+            CommonWidget().button(
+              150,
+              Colors.blueGrey,
+              'ドロップダウン画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DropDownScreen(),
                 ),
               ),
             ),
