@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sample/ui/screen/card_screen.dart';
 import 'package:flutter_sample/ui/screen/check_box_screen.dart';
+import 'package:flutter_sample/ui/screen/date_picker_screen.dart';
 import 'package:flutter_sample/ui/screen/indicator_screen.dart';
 import 'package:flutter_sample/ui/screen/drop_down_screen.dart';
 import 'package:flutter_sample/ui/screen/radio_button_screen.dart';
@@ -130,6 +131,21 @@ class HomeScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => TextFieldScreen(),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              height: 30.0,
+            ),
+            CommonWidget().button(
+              150,
+              Colors.brown,
+              '日付入力画面',
+                  () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DatePickerScreen(),
                 ),
               ),
             ),
