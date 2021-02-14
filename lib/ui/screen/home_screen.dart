@@ -6,6 +6,7 @@ import 'package:flutter_sample/ui/screen/drop_down_screen.dart';
 import 'package:flutter_sample/ui/screen/radio_button_screen.dart';
 import 'package:flutter_sample/ui/screen/slider_screen.dart';
 import 'package:flutter_sample/ui/screen/switch_screen.dart';
+import 'package:flutter_sample/ui/screen/text_field_screen.dart';
 import 'package:flutter_sample/ui/widget/common_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -114,6 +115,21 @@ class HomeScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => DropDownScreen(),
+                ),
+              ),
+            ),
+            SizedBox(
+              width: double.infinity,
+              height: 30.0,
+            ),
+            CommonWidget().button(
+              150,
+              Colors.cyan,
+              'テキストフィールド画面',
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TextFieldScreen(),
                 ),
               ),
             ),
