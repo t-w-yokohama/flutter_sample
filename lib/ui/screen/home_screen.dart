@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.blue,
                   'カード画面',
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   width: 10.0,
                 ),
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.red,
                   'チェックボックス画面',
@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.yellow,
                   'インジケーター画面',
@@ -70,7 +70,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   width: 10.0,
                 ),
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.green,
                   'ラジオボタン画面',
@@ -90,7 +90,7 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.orange,
                   'スライダー画面',
@@ -104,7 +104,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   width: 10.0,
                 ),
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.deepPurple,
                   'スイッチ画面',
@@ -124,7 +124,7 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.blueGrey,
                   'ドロップダウン画面',
@@ -138,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   width: 10.0,
                 ),
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.cyan,
                   'テキストフィールド画面',
@@ -158,7 +158,7 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.brown,
                   '日付入力画面',
@@ -172,7 +172,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   width: 10.0,
                 ),
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.lightGreen,
                   '時間入力画面',
@@ -192,7 +192,7 @@ class HomeScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CommonWidget().button(
+                CommonWidget.commonButton(
                   150,
                   Colors.brown,
                   'ダイアログ確認',

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CommonWidget {
-  Widget button(
+  static Widget commonButton(
       double width, MaterialColor color, String text, Function onPressed) {
     return ButtonTheme(
       minWidth: width,
