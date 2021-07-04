@@ -22,8 +22,7 @@ class _CardScreenState extends State<CardScreen> {
                     'This is Card.',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
-                  FlatButton(
-                    color: Colors.blue,
+                  TextButton(
                     onPressed: () => print('tap card.'),
                     child: Text(
                       'tap',

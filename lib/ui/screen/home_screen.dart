@@ -189,6 +189,28 @@ class HomeScreen extends StatelessWidget {
               width: double.infinity,
               height: 30.0,
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CommonWidget().button(
+                  150,
+                  Colors.brown,
+                  'ダイアログ確認',
+                  () => CommonWidget.commonDialog(
+                    context,
+                    'ダイアログ',
+                    'ダイアログ確認',
+                    'キャンセル',
+                    'OK',
+                    () => print('tap キャンセル'),
+                    () => print('tap OK'),
+                  ),
+                ),
+                SizedBox(
+                  width: 10.0,
+                ),
+              ],
+            ),
           ],
         ),
       ),
