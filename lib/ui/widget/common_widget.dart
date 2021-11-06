@@ -6,11 +6,15 @@ class CommonWidget {
     return ButtonTheme(
       minWidth: width,
       child: ElevatedButton(
-        onPressed: () => onPressed(),
         child: Text(
           text,
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        style: ElevatedButton.styleFrom(
+          primary: color,
+          onPrimary: Colors.white,
+        ),
+        onPressed: () => onPressed(),
       ),
     );
   }
