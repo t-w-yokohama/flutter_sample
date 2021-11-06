@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/const/app_const.dart';
 import 'package:flutter_sample/ui/screen/card_screen.dart';
 import 'package:flutter_sample/ui/screen/check_box_screen.dart';
 import 'package:flutter_sample/ui/screen/date_picker_screen.dart';
@@ -21,7 +22,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'カード画面',
+              AppConst.cardButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -35,7 +36,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'チェックボックス画面',
+              AppConst.checkBoxButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -49,7 +50,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'インジケーター画面',
+              AppConst.indicatorButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -63,7 +64,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'ラジオボタン画面',
+              AppConst.radioButtonButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -77,7 +78,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'スライダー画面',
+              AppConst.sliderButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -91,7 +92,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'スイッチ画面',
+              AppConst.switchButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -105,7 +106,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'ドロップダウン画面',
+              AppConst.dropDownButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -119,7 +120,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'テキストフィールド画面',
+              AppConst.textFieldButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -133,7 +134,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              '日付入力画面',
+              AppConst.datePickerButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -147,7 +148,7 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              '時間入力画面',
+              AppConst.timePickerButtonLabel,
               () => Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -161,13 +162,13 @@ class HomeScreen extends StatelessWidget {
             ),
             CommonWidget.commonButton(
               Colors.lightBlue,
-              'ダイアログ確認',
+              AppConst.dialogButtonLabel,
               () => CommonWidget.commonDialog(
                 context,
-                'ダイアログ',
-                'ダイアログ確認',
-                'キャンセル',
-                'OK',
+                AppConst.dialogTitle,
+                AppConst.dialogContent,
+                AppConst.dialogNegative,
+                AppConst.dialogPositive,
                 () => print('tap キャンセル'),
                 () => print('tap OK'),
               ),
