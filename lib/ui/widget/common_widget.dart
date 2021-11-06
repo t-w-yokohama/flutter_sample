@@ -5,7 +5,7 @@ class CommonWidget {
       double width, MaterialColor color, String text, Function onPressed) {
     return ButtonTheme(
       minWidth: width,
-      child: TextButton(
+      child: ElevatedButton(
         onPressed: () => onPressed(),
         child: Text(
           text,
