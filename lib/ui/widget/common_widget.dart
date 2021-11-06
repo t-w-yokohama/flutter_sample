@@ -2,20 +2,18 @@ import 'package:flutter/material.dart';
 
 class CommonWidget {
   static Widget commonButton(
-      double width, MaterialColor color, String text, Function onPressed) {
-    return ButtonTheme(
-      minWidth: width,
-      child: ElevatedButton(
-        child: Text(
-          text,
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
-        style: ElevatedButton.styleFrom(
-          primary: color,
-          onPrimary: Colors.white,
-        ),
-        onPressed: () => onPressed(),
+      MaterialColor color, String text, Function onPressed) {
+    return ElevatedButton(
+      child: Text(
+        text,
+        style: TextStyle(fontWeight: FontWeight.bold),
       ),
+      style: ElevatedButton.styleFrom(
+        primary: color,
+        onPrimary: Colors.white,
+        minimumSize: Size(double.infinity, 30.0),
+      ),
+      onPressed: () => onPressed(),
     );
   }
 
