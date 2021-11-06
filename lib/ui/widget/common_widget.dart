@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CommonWidget {
-  static Widget commonButton(
-      MaterialColor color, String text, Function onPressed) {
+  static Widget commonButton(String text, Function onPressed) {
     return ElevatedButton(
       child: Text(
         text,
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
       style: ElevatedButton.styleFrom(
-        primary: color,
+        primary: Colors.lightBlue,
         onPrimary: Colors.white,
         minimumSize: Size(double.infinity, 30.0),
       ),

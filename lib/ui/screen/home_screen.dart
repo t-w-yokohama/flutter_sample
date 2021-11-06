@@ -21,7 +21,6 @@ class HomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.cardButtonLabel,
               () => Navigator.push(
                 context,
@@ -35,7 +34,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.checkBoxButtonLabel,
               () => Navigator.push(
                 context,
@@ -49,7 +47,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.indicatorButtonLabel,
               () => Navigator.push(
                 context,
@@ -63,7 +60,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.radioButtonButtonLabel,
               () => Navigator.push(
                 context,
@@ -77,7 +73,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.sliderButtonLabel,
               () => Navigator.push(
                 context,
@@ -91,7 +86,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.switchButtonLabel,
               () => Navigator.push(
                 context,
@@ -105,7 +99,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.dropDownButtonLabel,
               () => Navigator.push(
                 context,
@@ -119,7 +112,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.textFieldButtonLabel,
               () => Navigator.push(
                 context,
@@ -133,7 +125,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.datePickerButtonLabel,
               () => Navigator.push(
                 context,
@@ -147,7 +138,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.timePickerButtonLabel,
               () => Navigator.push(
                 context,
@@ -161,7 +151,6 @@ class HomeScreen extends StatelessWidget {
               height: 10.0,
             ),
             CommonWidget.commonButton(
-              Colors.lightBlue,
               AppConst.dialogButtonLabel,
               () => CommonWidget.commonDialog(
                 context,
